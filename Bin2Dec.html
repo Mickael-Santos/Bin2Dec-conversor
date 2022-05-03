@@ -12,17 +12,48 @@
         input#Dec{
             width:100px;
             height:15px;
+            margin-top: 10pt;
+            margin-left:41px;
+        }
 
-            
+        div.InputContainer{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            margin-top: 100px;
+            margin-left: 250pt;
+            padding: 10px;
+
+        }
+
+        div.ButtonContainer{
+            background-color:aquamarine;
+            height:200px;
+            width: 200px;
+            margin-top: 0px;
+            margin-left:250pt;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Conversor Bin2Dec</h1>
-    <p>Decimal:</p><input type="text" name="Dec" id="Dec">
-    <p><input type="button" value="Converter" onclick="convertToBin()">
-    <h2> Resultado</h2>
-    <div id ="res">
+
+    <div class="InputContainer">
+        <h1>Conversor</h1>
+        <p>Dec</p>
+        <p><input type="text" name="Dec" id="Dec"></p>
+    </div>
+
+    <div class="ButtonContainer">
+        <input type="button" value="Converter" onclick="convertToBin()">
+        
+        <div id="res">
+            <h2>0</h2>
+        </div>
+    </div>
+
+    
+    
 
     <script>
         function convertToBin(num){
@@ -31,7 +62,8 @@
         var res = document.getElementById('res')
         var bin = dec.toString(2)
         
-        res.innerHTML = `[ ${bin} ]`
+        res.innerHTML = bin
+        
         }
        
     </script>
