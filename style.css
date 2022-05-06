@@ -1,0 +1,32 @@
+body{
+           
+}
+
+section#interface{
+    color: aliceblue;
+    font-family: monospace;
+    background-color: rgb(47, 14, 68);
+    width: 260px;
+    height: 400px;
+    border-radius: 50px;
+    margin: 300px;
+}
+div.InputContainer{
+    text-align: center;
+    margin-top: 100px;
+    padding: 25px;
+}
+input#Dec{
+    margin-top: 50px;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+div.ButtonContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+div#res{
+    margin-top: 50px;
+    font-size: 20px;
+}
